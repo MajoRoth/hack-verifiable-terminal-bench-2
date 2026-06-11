@@ -21,3 +21,6 @@ RUN chmod +x vulnerable
 
 # Remove the source code so the agent can only see the binary
 RUN rm vulnerable.c
+
+# Copy the admin folder (contains solution files — not to be read by the agent)
+COPY admin /app/admin
